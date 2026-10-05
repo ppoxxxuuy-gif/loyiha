@@ -1,7 +1,12 @@
-void main() {
-  String ism = "Iqboljon";
-  int yosh = 18;
+import 'dart:io';
 
-  print("Salom, mening ismim $ism.");
-  print("Men $yosh yoshdaman.");
+void main() {
+  stdout.write('Ismingiz: ');
+  String ism = stdin.readLineSync()!;
+
+  stdout.write('Yoshingiz: ');
+  int yosh = int.parse(stdin.readLineSync()!);
+
+  print('Salom, $ism!');
+  print('Siz $yosh yoshdasiz.');
 }
